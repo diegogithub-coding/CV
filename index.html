@@ -737,7 +737,7 @@
       // Function to generate and download the image
       function generateImage() {
           // Get the entire HTML content of the page
-          const htmlContent = document.documentElement;
+          const htmlContent = document.body;
 
           // Use html2canvas to capture the content as an image
           html2canvas(htmlContent).then(function(canvas) {

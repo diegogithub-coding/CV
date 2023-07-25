@@ -5,12 +5,12 @@ background-image: url("../img/Untitled.png");
   background-attachment: fixed;
   opacity: 0.97;
 }
-/*@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 body {
   background: rgb(230,230,230);
   opacity: 1;
 }
-}*/
+}
 
 code {
   padding: 2px 4px;
