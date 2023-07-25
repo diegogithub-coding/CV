@@ -732,5 +732,31 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
     <script type="text/javascript" src="assets/base/github-activity/script.js"></script>
     <script type="text/javascript" src="assets/base/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <script>
+      // Function to generate and download the image
+      function generateImage() {
+          // Get the entire HTML content of the page
+          const htmlContent = document.documentElement;
+
+          // Use html2canvas to capture the content as an image
+          html2canvas(htmlContent).then(function(canvas) {
+              // Convert the canvas to an image data URL
+              const imageDataURL = canvas.toDataURL("image/png");
+
+              // Create a temporary link element to trigger the download
+              const downloadLink = document.createElement("a");
+              downloadLink.href = imageDataURL;
+              downloadLink.download = "your-website-image.png";
+
+              // Append the link to the document and click it programmatically to trigger the download
+              document.body.appendChild(downloadLink);
+              downloadLink.click();
+
+              // Clean up by removing the temporary link element
+              document.body.removeChild(downloadLink);
+          });
+      }
+  </script>
   </body>
 </html>
