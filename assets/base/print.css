@@ -1,47 +1,384 @@
 body {
-  font: 100%/150% Georgia, "Times New Roman", Times, serif;
+  background-image: url("../img/Untitled.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  opacity: 0.97;
+}
+@media screen and (max-width: 768px) {
+body {
+  background: rgb(230,230,230);
+  opacity: 1;
+}
 }
 
-a:not(#mail):after {
-  content: " (" attr(href) ")";
+code {
+  padding: 2px 4px;
+  color: #c0341d;
+  background-color: #fbe5e1;
+  border-radius: 4px;
 }
 
-.do-not-print {
-  display: none !important;
+.languages {
+  position: static;
 }
 
-.print-exactly {
-  -webkit-print-color-adjust: exact;
+.banner {
+  border: 2px solid #e2e2e2;
+  margin-bottom: 20px;
+  max-height: 45px;
+  max-width: 85px;
+  width:100%;
+  border-radius: 5px 15px 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.1s ease 0.1s;
+  -webkit-transition:-webkit-transform 0.1s ease 0.1s;
+  -moz-transition:-moz-transform 0.1s ease 0.1s;
+  -ms-transition:-ms-transform 0.1s ease 0.1s;
+  -o-transition:-o-transform 0.1s ease 0.1s;
+  animation: notcircle 0.5s;
+  animation-fill-mode: forwards;
 }
 
-.print-small {
-  zoom: 0.8;
-  -moz-transform: scale(0.8);
+.banner:hover {
+  animation: circle 0.5s;
+  animation-fill-mode: forwards;
 }
 
-.print-half {
-  zoom: 0.5;
-  -moz-transform: scale(0.5);
+.vertical-align {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.progress {
-  width: 70%;
+.face-recognition {
+  border: 4px solid #e2e2e2;
+  max-height: 400px;
+  max-width: 400px;
+  width:95%;
+  border-radius: 15px 35px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.1s ease 0.1s;
+  -webkit-transition:-webkit-transform 0.1s ease 0.1s;
+  -moz-transition:-moz-transform 0.1s ease 0.1s;
+  -ms-transition:-ms-transform 0.1s ease 0.1s;
+  -o-transition:-o-transform 0.1s ease 0.1s;
+  animation: notcircle 0.5s;
+  animation-fill-mode: forwards;
 }
 
-.page-break	{
-  display: block;
-  page-break-before: always;
+.face {
+  border: 4px solid #e2e2e2;
+  max-height: 400px;
+  max-width: 400px;
+  width:80%;
+  border-radius: 15px 35px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.1s ease 0.1s;
+  -webkit-transition:-webkit-transform 0.1s ease 0.1s;
+  -moz-transition:-moz-transform 0.1s ease 0.1s;
+  -ms-transition:-ms-transform 0.1s ease 0.1s;
+  -o-transition:-o-transform 0.1s ease 0.1s;
+  animation: notcircle 0.5s;
+  animation-fill-mode: forwards;
 }
 
-.textsection {
-  padding-left: 0px;
-  padding-right: 0px;
+.face:hover {
+  animation: circle 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes notcircle {
+  0% {
+    border-radius: 200px;
+  }
+  100% {
+    border-radius: 15px 35px 15px;
+  }
+}
+
+@keyframes circle {
+  0% {
+    border-radius: 15px 35px 15px;
+  }
+  100% {
+    border-radius: 200px;
+  }
+}
+
+.section {
+  height: 97%;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #d6d6d6;
+}
+
+.section-right {
+  animation: move-right 1.5s;
+}
+
+.section-left {
+  animation: move-left 1.5s;
+}
+
+.last-section {
+  margin-bottom: 50px;
+}
+
+.first-section {
+  margin-top: 0px;
+  border-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  background-color: #00000000;
+  color: #fff;
+  animation: move-down 1s;
+}
+
+@keyframes move-down {
+  0% {
+    transform: translateY(-25rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-right {
+  0% {
+    transform: translateX(-100rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes move-left {
+  0% {
+    transform: translateX(100rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.first-section p {
+  color: #b4c3c8;
+}
+
+.first-section a {
+  color: #c5d3d8;
+}
+
+#py {
+  background-color: #3b77aa;
+}
+
+#jar {
+  background-color: #e66e00;
+}
+
+#cpp {
+  background-color: #404244;
+}
+
+#sh {
+  background-color: #52775f;
+}
+
+#c {
+  background-color: #595b5e;
+}
+
+#cs {
+  background-color: #963aad;
 }
 
 #mzn {
-  background-color: #57d1ba;
+  background-color: #fff;
 }
 
-@page {
-    margin: 2cm;
+#css {
+  background-color: #0d73b7;
+}
+
+#html {
+  background-color: #e44f26;
+}
+
+#js {
+  background-color: #ffca28;
+}
+
+#pl {
+  background-color: #bb151b;
+}
+
+#go {
+  background-color: #29bdb0;
+}
+
+#mysql {
+  background-color: #3765af;
+}
+
+#postgres {
+  background-color: #008bb9;
+}
+
+#oracle {
+  background-color: #b81427;
+}
+
+#mongo {
+  background-color: #81c463;
+}
+
+#elastic {
+  background-color: #f0bf1a;
+}
+
+#redis {
+  background-color: #991121;
+}
+
+#neo4j {
+  background-color: #008cc2;
+}
+
+#git {
+  background-color: #6cc644;
+}
+
+#flask {
+  background-color: #303030;
+}
+
+#docker {
+  background-color: #0db7ed;
+}
+
+#gitlabCICD {
+  background-color: #fc6d26;
+}
+
+#swagger {
+  background-color: #0f9921;
+}
+
+#nginx {
+  background-color: #196423;
+}
+
+#apache {
+  background-color: #ce8629;
+}
+
+#django {
+  background-color: #092e20;
+}
+
+#jenkins {
+  background-color: #0a4a5e;
+}
+
+#aws_stack {
+  background-color: #ff9900;
+}
+
+#kubernetes {
+  background-color: #234bfa;
+}
+
+#graphql {
+  background-color: #f323fa;
+}
+
+#socketio {
+  background-color: #424242;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: attr(aria-valuenow);
+  }
+}
+
+.progress-bar {
+  animation: progress 5s ease;
+}
+
+.progress {
+  margin-left: 130px;
+  margin-bottom: 10px;
+  height: 1.5rem;
+  background-color: #abb2bc;
+}
+
+.progress-value {
+  position:absolute;
+  left: 0;
+  right: 0;
+  font-size: 17px;
+}
+
+.bigger-line {
+  line-height: 2em;
+}
+
+.space-top {
+  padding-top: 10px;
+}
+
+.space-left {
+  padding-left: 15px;
+}
+
+.description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.technologies li {
+  background-color: #3582C4;
+  color: #fff;
+  font-size: 80%;
+  line-height: 1.75em;
+  border-radius: 20px;
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.textsection {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.subsection {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e2e2e2;
+}
+
+.lastsubsection {
+  border-bottom: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.version {
+  vertical-align: middle;
+  font-size: 60%;
+  line-height: 1.4em;
+  padding: 2px 4px;
+  margin-top: 17px;
+  margin-left: 10px;
+  background: rgb(248,248,248);
+  color: rgb(250,80,80);
+  border-radius: 5px;
 }
